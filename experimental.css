@@ -1,0 +1,10 @@
+#box{
+    box-sizing: border-box;
+    font-size: 70px;
+    background-color: blue;
+    width: 500px;
+    height:600px;
+    border: solid 50px black;
+    padding:100px;
+    margin: 90px;
+}
