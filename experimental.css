@@ -1,10 +1,52 @@
-#box{
-    box-sizing: border-box;
-    font-size: 70px;
-    background-color: blue;
-    width: 500px;
-    height:600px;
-    border: solid 50px black;
-    padding:100px;
     margin: 90px;
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#right, #left{
+    display: flex;
+    flex-direction: row;
+}
+
+#right a, #left a{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    height: inherit;
+    color: white;
+}
+
+
+header{
+    margin-top: 0px;
+    background-color: black;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#download{
+    height: 40px;
+    color: white;
+    background-color:rgb(52, 195, 255);
+} 
+
+#right a:hover{
+    cursor:pointer; 
+    
+}
+#left a:hover, #right a:not(#download):hover{
+    color:rgb(52, 195, 255);
+}
+#download:hover{
+    color: black;
 }
