@@ -92,3 +92,6 @@ path{
 i{
     color: white;
 }
+#language-items a:hover{
+    color: rgb(52, 195, 255);
+}
