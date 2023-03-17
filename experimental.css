@@ -1,4 +1,3 @@
-    margin: 90px;
 body{
     display: flex;
     flex-direction: column;
@@ -10,24 +9,24 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 #right, #left{
     display: flex;
     flex-direction: row;
 }
 
-#right a, #left a{
-    border: 2px solid black;
+#right div, #left div, #sign-in{
     padding: 5px;
     border-radius: 5px;
     height: inherit;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
 header{
     margin-top: 0px;
-    background-color: black;
+    background-color: rgb(14,17,40);
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -40,13 +39,56 @@ header{
     background-color:rgb(52, 195, 255);
 } 
 
-#right a:hover{
+/** #right a:hover, #left a:hover{
     cursor:pointer; 
     
 }
-#left a:hover, #right a:not(#download):hover{
-    color:rgb(52, 195, 255);
-}
+**/
 #download:hover{
     color: black;
+}
+#left div:hover, #right div:hover,#sign-in{
+    color: rgb(52, 195, 255);
+    cursor: pointer;
+    fill: rgb(52, 195, 255);
+}
+#sign-in-icon{
+    width: 20px;
+    height:20px;
+    fill:blue;
+}
+#sign-in{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+#sign-in:hover{
+    color: rgb(52, 195, 255);
+    fill: rgb(52, 195, 255);
+}
+path{
+    stroke: none;
+    stroke-width: 1;
+    stroke-dasharray:  none;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    fill: rgb(255, 255, 255); 
+    fill-rule: nonzero;
+    opacity:1;
+}
+
+/** path:hover{
+    fill:rgb(52, 195, 255);
+}
+**/
+
+#language-items{
+    position:absolute;
+    top: 50px;
+    right: 70px;
+    display: none;
+}
+i{
+    color: white;
 }
