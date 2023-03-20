@@ -7,6 +7,7 @@ const search= document.querySelector("#search")
 const searchBar = document.querySelector("#searchText")
 const cancell = document.querySelector("#cancell")
 
+
 language.addEventListener("click", function(){
     if(languageItems.style.display==="flex"){
         languageItems.style.display = "none"

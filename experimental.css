@@ -1,7 +1,6 @@
 body{
     display: flex;
     flex-direction: column;
-    padding: 0px;
     margin: 0px;
 }
 
@@ -118,7 +117,7 @@ i{
 
 #searchText input{
     color: white;
-    background-color: rgb(29, 36, 89);
+    background-color: rgb(3, 16, 116);
     outline: none;
     border: none;
 }
