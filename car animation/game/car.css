@@ -1,0 +1,55 @@
+body{
+    background: linear-gradient(#0a244e,#0a244e);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.night{
+    margin: 5rem auto;
+    width: 50rem;
+    height:30rem;
+    background: url(../assets/Img_1.png);
+    background-size: cover;
+
+    position: relative;
+    box-sizing: 1px 2px 60px rgba(0,0,0,1);
+    overflow: hidden;
+}
+.surface{
+    height: 9rem;
+    width: 500%;
+    background: url(../assets/Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: repeat-x;
+
+    animation: moveright 6s linear infinite;
+}
+
+.car{
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    animation: suspension 1s linear infinite;
+}
+
+@keyframes moveright{
+    100%{transform:translateX(-2990px)}
+}
+
+@keyframes suspension{
+    100%{
+        transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    0%{
+        transform: translateY(1px);
+    }
+}
