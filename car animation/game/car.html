@@ -11,25 +11,15 @@
     <div class="night">
         <div class="surface"></div>
         <div class="car">
-            <img src="../assets/Img_05.png">
+            <img id="car-image" src="../assets/Img_05.png">
         </div>
     </div>
     <div class="control">
         <button id="move">Move</button>
         <button id="stop">stop</button>
-        <button>Flash light</button>
+        <button id="flashlight" onclick='document.getElementById("car-image").src="../assets/Img_06.png"'>Flash light on</button>
+        <button id="flashlight" onclick='document.getElementById("car-image").src="../assets/Img_05.png"'>Flash light off</button>
     </div>
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.4.js" 
-    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" 
-    crossorigin="anonymous"></script>
-
-    <script src="car.css"></script>
+    <script src="car.js"></script>
 </body>
 </html>

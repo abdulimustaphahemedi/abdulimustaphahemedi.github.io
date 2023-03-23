@@ -5,6 +5,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: red;
 }
 
 .night{
@@ -28,14 +29,14 @@ body{
     left: 0px;
     background-repeat: repeat-x;
 
-    animation: moveright 6s linear infinite;
+    animation: stop 6s linear infinite;
 }
 
 .car{
     position: absolute;
     bottom: 10%;
     left: 30%;
-    animation: suspension 1s linear infinite;
+    animation: stop 1s linear infinite;
 }
 
 @keyframes moveright{
@@ -52,4 +53,22 @@ body{
     0%{
         transform: translateY(1px);
     }
+}
+
+#move{
+    color:black;
+}
+
+@keyframes stop {
+    100%{
+        transform:translateX(0px);
+        transform:translateY(0px);
+    }
+}
+img{
+    src:"../assets/Img_06.png";
+}
+
+#stop{
+    color: red;
 }
