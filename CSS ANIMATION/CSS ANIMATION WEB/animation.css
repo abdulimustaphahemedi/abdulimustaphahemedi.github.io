@@ -23,11 +23,6 @@ header{
     justify-content: space-around;
 }
 
-ul li{
-    list-style: none;
-    display:flex;
-}
-
 button{
     width: 7rem;
     height: 2rem;
@@ -48,6 +43,7 @@ button:hover{
 }
 
 #about{
+    transition: 2ms;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -56,6 +52,8 @@ button:hover{
 }
 
 #about-menue{
+    transition: 1ms;
+    border-bottom: 1px solid black;
     display: none;
     position: absolute;
     margin-top: 5rem;
@@ -70,4 +68,11 @@ nav{
 }
 nav div{
     padding: 0rem 3rem;
+}
+
+ul{
+    width: 6rem;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(94, 42, 5);
 }
