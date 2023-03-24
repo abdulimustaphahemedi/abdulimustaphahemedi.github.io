@@ -1,3 +1,3 @@
 
 document.getElementById('title').innerText = 'Javascript';
-document.getElementById('title').style.color = 'red';
+document.getElementById('title').style.color = 'orange';
