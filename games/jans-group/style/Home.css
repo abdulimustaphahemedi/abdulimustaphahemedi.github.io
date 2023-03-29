@@ -5,12 +5,15 @@
 
 }
 
+
+
+
 /** this css involved in hero section only **/
 
 .hero-content{
     width: 100%;
     height: 60em;
-    background-image: url("../image/hero-img4kweb.png");
+    background-image: url("../image/hero-img4k.png");
     background-size: cover;
     background-position: center;
 }
@@ -33,6 +36,10 @@
     justify-content: center ;
     align-content: center;
 }
+
+
+
+/** top primary navigatio**/
 .hero-content .primary-navigation .topPrimaryNav{
     display: flex;
     flex-direction: row;
@@ -41,8 +48,8 @@
 }
 hr{
     margin-top: 20px;
-    color: rgb(63, 62, 62);
-    background-color: rgb(80, 80, 80);
+    color:rgb(35 33 33);
+    background-color:rgb(35 33 33);
     border-width: 5px;
     border:none;
     height: 2px;
@@ -60,11 +67,80 @@ hr{
 #jans-logo{
     width: 125px;
 }
-.social-media img , .menue-icon img{
+.social-media img , .menue-icon img, #hero-menue-icon,#cancel_icon{
     height: 35px;
 }
+
+
+
+
+/**Bottom primary navigation**/
+.bottomPrimaryNav{
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightBottomPrimaryNav{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.rightBottomPrimaryNav img{
+    margin-right: 40px;
+}
+/* drop down menue*/
+.menue{
+    /* display:none; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 262px;
+    height: 362px;
+    background-color: white;
+    color: black;
+}
+.menue li{
+    list-style: none;
+    padding: 30px;
+}
+
+
+
+.leftBottomPrimaryNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftBottomPrimaryNav>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 4em;
+}
+.leftBottomPrimaryNav>div hr{
+    height: 5px;
+    width: 6em;
+}
+hr[data-type="over"]{
+    background-color: #D99F1F;
+}
+.bottom-line{
+    margin: 0px;
+}
+
+
+
+/* Search button at the Bottom of Hero setion */
 .hero-search-bt{
     border-style: none;
+    border-radius: 5px;
     width: 257px;
     height: 70px;
     margin-bottom:31px;
@@ -74,6 +150,8 @@ hr{
 }
 
 
+
+/** Device modals**/
 @media (min-width: 1440px){
     .hero-content{
         height: 130em;
