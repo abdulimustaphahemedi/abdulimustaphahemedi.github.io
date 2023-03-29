@@ -4,11 +4,15 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+a{
+    text-decoration: none;
+    color: #D99F1F;
+}
 
 
 
 
-/** this css involved in hero section only **/
+                                        /** this css involved in hero section only **/
 
 .hero-content{
     width: 100%;
@@ -39,7 +43,7 @@
 
 
 
-/** top primary navigatio**/
+                                   /** top primary navigatio**/
 .hero-content .primary-navigation .topPrimaryNav{
     display: flex;
     flex-direction: row;
@@ -71,10 +75,14 @@ hr{
     height: 35px;
 }
 
+.topPrimaryNav .leftTopPrimaryNav:hover{
+    cursor: pointer;
+}
 
 
 
-/**Bottom primary navigation**/
+
+                                   /**Bottom primary navigation**/
 .bottomPrimaryNav{
     font-size: 20px;
     color: white;
@@ -94,22 +102,95 @@ hr{
 .rightBottomPrimaryNav img{
     margin-right: 40px;
 }
-/* drop down menue*/
-.menue{
-    /* display:none; */
+                                   /* global stock menue drop down */
+.globalMenue{
+    display: none;
+    transition-delay: 1s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 286px;
+    height: 242px;
+    color: black;
     position: absolute;
-    top: 0px;
+    top: 2.1em; 
+    background-color: white;
+
+    font-size: 23px;
+
+    transition: display, 1s ease-in-out;
+}
+.globalMenue li , .aboutMenue li, .GlobalContactMenue li{
+    padding: 25px;
+    list-style: none;
+}
+
+/* About Menue drop down */
+
+.aboutMenue{
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 2.4em;
+    width: 262px;
+    height: 381px;
+    color: black;
+
+}
+.aboutMenue li{
+    list-style: none;
+}
+
+/* Global contact menue */
+
+.GlobalContactMenue{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: white;
+    top: 2.4em;
+    width: 262px;
+    height: 242px;
+    color: black;
+
+}
+.GlobalContactMenue li{
+    list-style: none;
+}
+                                          /* hero drop down menue*/
+.menue{
+    display:none; 
+    position: absolute;
+    top: 2.4em;
     right: 0px;
 
     width: 262px;
-    height: 362px;
+    height: 430px;
     background-color: white;
     color: black;
+}
+.cancel-icon{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 .menue li{
     list-style: none;
     padding: 30px;
 }
+li[data-color="gray"]{
+    background-color: #a79b84;
+    box-shadow:0 0 3px rgb(0, 0, 0) inset;
+}
+li[data-color="white"]{
+    background-color: #e1c7a5;
+    box-shadow:0 0 3px rgb(9, 9, 9,55) inset;
+}
+
+
 
 
 
@@ -135,6 +216,14 @@ hr[data-type="over"]{
     margin: 0px;
 }
 
+.global_contact:hover , .about-us:hover, .globalStock:hover, .rightBottomPrimaryNav:hover{
+    cursor: pointer;
+}
+
+.GlobalContactMenue{
+
+}
+
 
 
 /* Search button at the Bottom of Hero setion */
@@ -149,7 +238,26 @@ hr[data-type="over"]{
     color: #707070;
 }
 
+.GlobalontactMenue ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
+/* Animation key frame*/
+
+@keyframes jump{
+    100%{
+        transform: translateY();
+    }
+    50%{
+        transform: translateY();
+    }
+    0%{
+        transform: translateY()
+    }
+}
 
 /** Device modals**/
 @media (min-width: 1440px){
