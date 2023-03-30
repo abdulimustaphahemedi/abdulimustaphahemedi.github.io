@@ -12,7 +12,7 @@ a{
 
 
 
-                                        /** this css involved in hero section only **/
+    /******************************** this css involved in hero section only ****************************/
 
 .hero-content{
     width: 100%;
@@ -228,14 +228,15 @@ hr[data-type="over"]{
 
 /* Search button at the Bottom of Hero setion */
 .hero-search-bt{
+    padding: 0px 20px;
     border-style: none;
     border-radius: 5px;
-    width: 257px;
+    width: 800px;
     height: 70px;
     margin-bottom:31px;
-    background-color: #D99F1F;
+    background-color: #f0f0f0;
     font-size: 33px;
-    color: #707070;
+    color: #7070704b;
 }
 
 .GlobalontactMenue ul{
@@ -259,7 +260,74 @@ hr[data-type="over"]{
     }
 }
 
-/** Device modals**/
+
+
+
+
+
+
+
+
+
+
+
+/****************** This css involve second section named (Search car section) ***********************/
+
+
+.search_car_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width:auto;
+    background-color: #ffffff;
+    height:800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.search_car_section .search_car_container{
+    top: 30px;
+    position:relative;
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    background-color: aliceblue;
+    border-radius: 3px;
+    box-shadow: 0 0 9px ;
+}
+.search_car_section .type_of_car_choices{
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+}
+.search_car_section .type_of_car_choices > div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+    background-color:inherit;
+    margin: 10px;
+}
+
+
+/* Button*/
+.type_of_car_choices>div{
+ display: flex;
+ flex-direction: row;
+ justify-content: stretch;
+ align-items: center;
+ align-content:center
+}
+
+
+
+
+
+
+/************************************************** Device modals***************************************/
 @media (min-width: 1440px){
     .hero-content{
         height: 130em;

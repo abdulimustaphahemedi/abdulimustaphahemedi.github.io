@@ -1,0 +1,63 @@
+
+.bt-truck:focus, .bt-truck:hover{
+    border-color: #1773cf;
+    border-style:solid;
+
+}
+.bt-truck{
+    color: #1773cf;
+    border-style: solid;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+.bt-truck>div{
+    color: #082037;
+}
+
+
+.ckeck-item[data-visible="not-visible"]{
+    transform: translate(150px,1px);
+    
+}
+.ckeck-item[data-visible="visible"]{
+    transform: translate(70px,1px);
+    animation-duration: 100ms;
+    
+}
+.check-icon[aria-hidden="false"]{
+    animation: "bounce 100ms ease-in-out  infinite";
+    transition-duration: 500ms;
+    scale : 1.5;
+}
+.ckeck-item::before{
+    content: "";
+    height: 60px;
+    width: 30px;
+    background-color:#1773cf;
+    position:absolute;
+    rotate: -45deg;
+    overflow: hidden;
+    z-index: 99;
+    transition: all .08675s ease;
+    transform: translate(7px,-24px);
+}
+
+
+.check-icon{
+    scale: 0.8;
+    position:relative;
+    z-index: 100;
+}
+
+@keyframes bounce{
+    100%{
+        scale:1;
+    }
+    50%{
+        scale:2;
+    }
+    0%{
+        scale: 0;
+    }
+}
